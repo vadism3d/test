@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-floor">
+        <div class="container">
+            <div class="menu">
+                <a href="#" class="location">
+                    <img src="img/pin.png" alt="Geo Pin" class="pin">
+                    <div class="sity">Волгоградская область</div>
+                </a>
+                <div class="menu_links">
+                    <a href="#" class="menu_link">Тендеры</a>
+                    <a href="#" class="menu_link">База подрядчиков</a>
+                    <button onclick="myFunction()" class="dropbtn menu_link" >Другие сервисы <img src="img/arrow.png" alt="" class="drop"></button>
+                    <div id="my Dropdown" class="dropdown-content">
+                        <a style="color: #708598;" href="#">Главная</a>
+                        <a style="color: #708598;" href="#">О Нас</a>
+                        <a style="color: #708598;" href="#">Контакты</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-floor">
+        <div class="container">
+            <div class="search-poly">
+                <img src="img/logo.png" alt="StroyPortal.ru Logo" class="logo">
+                <a href="#" class="catalog">
+                    <img src="img/menu.png" alt="" class="humburger-menu"> 
+                    <div class="catalog-text">Каталог</div>
+                </a>
+                <form>
+                    <div class="castom-input">
+                        <input type="search" class="search" placeholder="Хочу найти..." autocomplete>
+                    </div>
+                </form>
+                <button class="search-button">
+                    <img src="img/search.png" alt="">
+                </button>
+                <a href="#" class="list">
+                    <img src="img/list.png" alt="" class="list-icon">
+                    <div class="list-text">Список</div>
+                </a>
+                <div class="log-icon">
+                    A
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script>
+        function myFunction() {
+  document.getElementById("my Dropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("my Dropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtЗначение = a[i].textСодержание || a[i].innerText;
+    if (txtЗначение.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+    </script>
+</body>
+</html>

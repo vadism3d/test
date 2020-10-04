@@ -1,0 +1,140 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    outline: 0 !important;
+  }
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.first-floor{
+    background: #FAFBFC;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.pin{
+    margin-right: 8px;
+}
+.sity{
+    color: #708598;
+    font-weight: 400;
+    font-size: 12px;
+    border-bottom: #708598 dotted;
+}
+.menu_link{
+    text-decoration: none;
+    color: #708598;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 24px;
+}
+.menu_link:last-child{
+    margin-right: 0;
+}
+.drop{
+    margin-left: 5px;
+}
+.second-floor{
+    padding: 18px 0;
+    border-bottom: 1px solid #ECEFF1;
+    border-top: 1px solid #ECEFF1;
+}
+
+.search-poly{
+    display: flex;
+    align-items: center;
+}   
+.catalog{
+    padding: 12px 16px;
+    background: #FED83D;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #050F19;
+    display: flex;
+    align-items: center;
+    margin: 0px 24px;
+} 
+.catalog-text , .list-text{
+    font-size: 14px;
+    margin-left: 8px;
+}
+.search{
+    position: relative;
+    border: 1px solid #ECEFF1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 526px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 14px;
+}
+.search-button{
+    position: absolute;
+    border: none;
+    background: none;
+    right: 600px;
+    top: 63px;
+}
+.list{
+    padding: 9px 16px;
+    background: #FAFBFC;
+    color: #050F19;
+    border: 1px #ECEFF1 solid;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin: 0px 24px;
+}
+.log-icon{
+    padding: 10px 15px;
+    text-align: center;
+    align-items: center;
+    background: #9B51E0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+.dropbtn {
+    background:none;
+    color:  #708598;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    right: 400px;
+    position: absolute;
+    background-color: #FAFBFC;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
